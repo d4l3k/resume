@@ -1,10 +1,14 @@
-<link href="//fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-<style>
+<!doctype html>
+<html>
+<head>
+  <title>Tristan Rice - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <style>
   html {
     background-color: #eee;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
-    text-align: justify;
   }
   html, body, h2, h3 {
     font-size: 12pt;
@@ -23,9 +27,9 @@
     border-color: #444;
     color: #444;
   }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
   th, td {
     vertical-align: top;
   }
@@ -62,14 +66,11 @@
     flex-grow: 1;
     margin-top: 10px;
   }
-  section:nth-child(2) {
+  section#header {
     text-align: center;
     margin-top: 0;
   }
-  section:last-child h2 {
-    text-align: right;
-  }
-  section:last-child {
+  section#address-current {
     text-align: right;
   }
   section p {
@@ -97,179 +98,296 @@
       box-shadow: none;
     }
   }
-</style>
+  @media only screen and (max-width: 768px) {
+    body {
+      width: 100%;
+      margin: 0;
+      height: auto;
+      padding: 16px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    hr {
+      display: none;
+    }
+    tr {
+      display: block;
+    }
+    th, td {
+      display: block;
+    }
+    .right {
+      margin-top: 1em;
+    }
+    h2, h3 {
+      margin: 1em 0;
+    }
+    h2 {
+      margin-bottom: 0;
+      font-size: 24px;
+    }
+    h3 a {
+      display: block;
+    }
+    .header {
+      flex-direction: column;
+    }
+    section#header {
+      order: -10;
+    }
+    section#address-current {
+      text-align: left;
+    }
+  }
+  </style>
+</head>
+<body>
 <div class="header">
-<section>
-<h3>Permanent Address</h3>
-<p>10349 Lake Shore Blvd NE</p>
-Seattle, WA 98125
-</section>
-<section>
-<h1>Tristan Rice</h1>
-<p>
-<script type="text/javascript">
+  <section id="address-permanent">
+    <h3>Permanent Address</h3>
+    <p>10349 Lake Shore Blvd NE</p>
+    Seattle, WA 98125
+  </section>
+  <section id="header">
+    <h1>Tristan Rice</h1>
+    <p>
+    <script type="text/javascript">
 <!--
 h='&#102;&#110;&#46;&#108;&#x63;';a='&#64;';n='&#114;&#x69;&#x63;&#x65;';e=n+a+h;
 document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
-</script><noscript>&#114;&#x69;&#x63;&#x65;&#32;&#x61;&#116;&#32;&#102;&#110;&#32;&#100;&#x6f;&#116;&#32;&#108;&#x63;</noscript></p>
-<p>
-+12067994261
-</p>
-<a href="https://github.com/d4l3k" class="uri">https://github.com/d4l3k</a>
-</section>
-<section>
-<h3>Current Address</h3>
-<p>2205 Lower Mall</p>
-<p>Box MD1139</p>
-Vancouver, BC V6T 1Z4
-</section>
+    </script><noscript>&#114;&#x69;&#x63;&#x65;&#32;&#x61;&#116;&#32;&#102;&#110;&#32;&#100;&#x6f;&#116;&#32;&#108;&#x63;</noscript></p>
+    <p>
+    <script>document.write('+1'+'206'+'799'+'4261')</script>
+    </p>
+    <a href="https://github.com/d4l3k" class="uri">github.com/d4l3k</a>
+  </section>
+  <section id="address-current">
+    <h3>Current Address</h3>
+    <p>2829 E Kyne St, Unit 2104</p>
+    San Mateo, CA 94403
+  </section>
 </div>
 <hr>
 <table>
-<tbody>
-<tr>
-<th>
-<h2 id="work-experience">Work Experience</h2>
-</th>
-<td>
-<div class="right">
-Summer 2016
-</div>
-<h3 id="engineering-intern-cockroach">Software Engineering Intern, Cockroach Labs <a href="https://www.cockroachlabs.com">cockroachlabs.com</a></h3>
-<ul>
-<li>Worked on stability of the distributed KV-store.</li>
-<li>Designed a debugging tool for the Raft consensus algorithm.</li>
-</ul>
-<div class="right">
-Spring 2016
-</div>
-<h3 id="engineering-intern-gridspace">Software Engineer (part-time), Gridspace <a href="https://gridspace.com">gridspace.com</a></h3>
-<ul>
-<li>Seamlessly transfer conference calls between servers for scalability.</li>
-<li>Gridspace Memo UX improvements. Sift API bug fixes.</li>
-</ul>
-<div class="right">
-Summer 2015
-</div>
-<h3 id="engineering-intern-google">Software Engineering Intern, Google</h3>
-<ul>
-<li>Worked on tools for curating the Knowledge Graph and data integrity.</li>
-<li>Primarily used Go, C++, AngularJS, Polymer, and GoogleSQL.</li>
-<li>Increased productivity of thousands of Google contractors.</li>
-</ul>
-<div class="right">
-Summer 2014
-</div>
-<h3 id="engineering-intern-socrata">Engineering Intern, Socrata <a href="https://socrata.com" class="uri">socrata.com</a></h3>
-<ul>
-<li>Front end development using AngularJS, and Ruby.</li>
-<li>Debugging Scala and Java backend.</li>
-<li>Software used by 100+ major government organizations.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th>
-<h2 id="open-source">Open Source</h2>
-</th>
-<td>
-<div class="right">
-November 2013
-</div>
-<h3 id="linux-kernel-git.kernel.org">Linux Kernel <a href="https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/commit/?id=e17f5d7667c5414b8f12a93ef14aae0824bd2beb">git.kernel.org</a></h3>
-<ul>
-<li>Updated kernel driver to support the MayFlash GameCube USB adapter.</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th>
-<h2 id="programming-projects">Programming Projects</h2>
-</th>
-<td>
-<div class="right">
-Early 2013 - Present
-</div>
-<h3 id="websync-httpswebsyn.ca">WebSync <a href="https://websyn.ca/">websyn.ca</a></h3>
-<ul>
-<li>An open source Document, Presentation, Spreadsheet, Note Taking and File Sync suite similar to Google Drive or Office 365.</li>
-<li>Written in Node.JS, Javascript and Ruby with PostgreSQL and Redis.</li>
-<li>850+ Users. 35,000+ Page Views.</li>
-</ul>
-<div class="right">
-Spring 2015 - Present
-</div>
-<h3 id="go-pry">go-pry <a href="https://github.com/d4l3k/go-pry">github.com/d4l3k/go-pry</a></h3>
-<ul>
-<li>An interactive REPL for Go that allows you to drop into your code anywhere.</li>
-<li>Implements a Go interpreter that interacts with running compiled code.</li>
-<li>Featured at <a href="http://golangweekly.com/issues/51">golangweekly.com/issues/51</a>. 247+ GitHub Stars.</li>
-</ul>
-<div class="right">
-Fall 2015 - Present
-</div>
-<h3 id="messagediff">messagediff <a href="https://github.com/d4l3k/messagediff">github.com/d4l3k/messagediff</a></h3>
-<ul>
-<li>A library for doing diffs of arbitrary Go structs including non-exported fields.</li>
-<li>Featured at <a href="http://golangweekly.com/issues/72">golangweekly.com/issues/72</a>. 103+ GitHub Stars.</li>
-</ul>
-<div class="right">
-September 2015 - Present
-</div>
-<h3 id="degdb">degdb <a href="https://github.com/degdb/degdb">https://github.com/degdb/degdb</a></h3>
-<ul>
-<li>A distributed economic graph database operating similarly to Bitcoin.</li>
-<li>Won best use of Linode services at PennApps 2015 Fall.</li>
-</ul>
-</tr>
-<tr>
-<th>
-<h2 id="technological-expertise">Technological Expertise</h2>
-</th>
-<td>
-<h3 id="languages">Languages</h3>
-<ul>
-<li><em>Proficient:</em> Go, TypeScript, Ruby, JavaScript, SQL</li>
-<li><em>Working knowledge:</em> C/C++, Python, Bash</li>
-<li><em>Familiar:</em> Java/Scala (Android &amp; Web), R, Caffe</li>
-</ul>
-<h3 id="technologies">Technologies</h3>
-<ul>
-<li><em>Proficient:</em> Linux, PostgreSQL, Redis, Git, CockroachDB</li>
-<li><em>Familiar:</em> MongoDB, nginx</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th>
-<h2 id="education">Education</h2>
-</th>
-<td>
-<div class="right">
-Class of 2018
-</div>
-<h3 id="university-of-british-columbia">University of British Columbia</h3>
-Studying Computer Science. 3.9 GPA
-</td>
-</tr>
-<tr>
-<th>
-<h2 id="leadership-honors">Leadership &amp; Honors</h2>
-</th>
-<td>
-<div class="right">
-Spring 2014
-</div>
-<h3 id="eagle-scout">Eagle Scout</h3>
-<div class="right">
-Spring 2014
-</div>
-<h3 id="canadian-computing-competition">Canadian Computing Competition</h3>
-<ul>
-<li>Honor Roll &amp; School Champion - Top 10% of competitors.</li>
-</ul>
-</td>
-</tr>
-</tbody>
+  <tbody>
+    <tr>
+      <th>
+        <h2 id="work-experience">Work Experience</h2>
+      </th>
+      <td>
+        <div class="right">
+          Summer 2017
+        </div>
+        <h3 id="facebook">
+          Performance & Capacity Engineering Intern,
+          <a href="https://www.facebook.com">Facebook</a>
+        </h3>
+        <ul>
+          <li>
+            Worked on
+            <a
+             href="https://code.facebook.com/posts/1072626246134461/introducing-fblearner-flow-facebook-s-ai-backbone/">
+              FBLearner</a>
+            with the Applied Machine Learning Infrastructure team.
+          </li>
+          <li>
+            Created a machine learning model for resource usage prediction of
+            large scale machine learning jobs. Increases server utilization by
+            up to 400%.
+          </li>
+        </ul>
+        <div class="right">
+          Summer 2016
+        </div>
+        <h3 id="cockroach">
+          Software Engineering Intern,
+          <a href="https://www.cockroachlabs.com">Cockroach Labs</a></h3>
+        <ul>
+          <li>Worked on stability of CockroachDB's distributed KV-store.</li>
+          <li>Designed a debugging tool for the Raft consensus algorithm.</li>
+        </ul>
+        <div class="right">
+          Spring 2016
+        </div>
+        <h3 id="gridspace">
+          Software Engineering Intern,
+          <a href="https://gridspace.com">Gridspace</a>
+        </h3>
+        <ul>
+          <li>Added seamless transfer of conference calls between servers for scalability.</li>
+          <li>Gridspace Memo UX improvements. Python, SIP, React and Django.</li>
+        </ul>
+        <div class="right">
+          Summer 2015
+        </div>
+        <h3 id="google">
+          Software Engineering Intern,
+          <a href="https://www.google.com">Google</a>
+        </h3>
+        <ul>
+          <li>Worked on Knowledge Graph tools and data integrity.</li>
+          <li>Go, C++, AngularJS, Polymer, and GoogleSQL.</li>
+          <li>Increased productivity of thousands of contractors.</li>
+        </ul>
+        <div class="right">
+          Summer 2014
+        </div>
+        <h3 id="socrata">
+          Software Engineering Intern,
+          <a href="https://socrata.com" class="uri">Socrata</a>
+        </h3>
+        <ul>
+          <li>
+            Created timeline and table visualizations. Improved choropleth and bar chart.
+          </li>
+          <li>
+            Demo: <a href="https://fn.lc/1ud">fn.lc/1ud</a>.
+            AngularJS, Ruby, Scala and Java.
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <h2 id="programming-projects">Programming Projects</h2>
+      </th>
+      <td>
+        <div class="right">
+          Early 2013 - Present
+        </div>
+        <h3 id="websync-httpswebsyn.ca">WebSync <a href="https://websyn.ca/">websyn.ca</a></h3>
+        <ul>
+          <li>An open source document editing suite comparable to Google Drive.</li>
+          <li>Written in Node.JS, Javascript and Ruby with PostgreSQL and Redis.</li>
+          <li>1038+ Users. 43,000+ Page Views.</li>
+        </ul>
+        <div class="right">
+          Spring 2015 - Present
+        </div>
+        <h3 id="go-pry">go-pry <a href="https://github.com/d4l3k/go-pry">github.com/d4l3k/go-pry</a></h3>
+        <ul>
+          <li>An interactive REPL for Go. Reflection based Go interpreter seamlessly integrates with compiled
+            code. 287+ GitHub Stars.
+          </li>
+        </ul>
+        <div class="right">
+          Fall 2015 - Present
+        </div>
+        <h3 id="messagediff">
+          messagediff
+          <a href="https://github.com/d4l3k/messagediff">github.com/d4l3k/messagediff</a>
+        </h3>
+        <ul>
+          <li>A library for doing diffs of arbitrary Go structs including non-exported fields.</li>
+          <li>
+            Featured at
+            <a href="http://golangweekly.com/issues/72">golangweekly.com/issues/72</a>.
+            115+ GitHub Stars.
+          </li>
+        </ul>
+        <div class="right">
+          September 2015 - Present
+        </div>
+        <h3 id="degdb">degdb <a href="https://github.com/degdb/degdb">github.com/degdb/degdb</a></h3>
+        <ul>
+          <li>A distributed economic graph database operating similarly to Bitcoin.</li>
+          <li>
+            Won best use of Linode services at PennApps 2015 Fall.
+            173+ GitHub Stars
+          </li>
+        </ul>
+    </tr>
+    <tr>
+      <th>
+        <h2 id="open-source">Open Source</h2>
+      </th>
+      <td>
+        <div class="right">
+          November 2013
+        </div>
+        <h3 id="linux-kernel-git.kernel.org">Linux Kernel <a href="https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/commit/?id=e17f5d7667c5414b8f12a93ef14aae0824bd2beb">git.kernel.org</a></h3>
+        <ul>
+          <li>Updated kernel driver to support the MayFlash GameCube USB adapter.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <h2 id="technological-expertise">Technological Expertise</h2>
+      </th>
+      <td>
+        <h3 id="languages">Languages</h3>
+        <ul>
+          <li>
+            <em>Proficient:</em>
+            Go, Python, TypeScript, JavaScript, SQL, Ruby
+          </li>
+          <li>
+            <em>Working knowledge:</em>
+            C, C++, Hack/PHP, Bash, Java, Scala, R
+          </li>
+        </ul>
+        <h3 id="technologies">Technologies</h3>
+        <ul>
+          <li>
+            <em>Proficient:</em>
+            Linux, PostgreSQL, MySQL, Redis, Git, CockroachDB
+          </li>
+          <li>
+            <em>Familiar:</em>
+            MongoDB, nginx
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <h2 id="education">Education</h2>
+      </th>
+      <td>
+        <div class="right">
+          Class of 2018
+        </div>
+        <h3 id="university-of-british-columbia">University of British Columbia</h3>
+        <ul>
+          <li>
+            Studying Computer Science. Fourth Year. 3.95 GPA
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <h2 id="leadership-honors">Leadership</h2>
+      </th>
+      <td>
+        <div class="right">
+          Fall 2016 - Present
+        </div>
+        <h3 id="csss">
+          VP Communications & Webmaster,
+          <a href="https://ubccsss.org">
+          UBC CS Student Society
+          </a>
+        </h3>
+        <div class="right">
+          Fall 2015 - Present
+        </div>
+        <h3 id="csss">
+         Technical Director & Webmaster,
+         <a href="https://www.nwhacks.io">nwHacks</a>
+        </h3>
+        <div class="right">
+          Spring 2014
+        </div>
+        <h3 id="eagle-scout">Eagle Scout</h3>
+      </td>
+    </tr>
+  </tbody>
 </table>
+</body>
+</html>
